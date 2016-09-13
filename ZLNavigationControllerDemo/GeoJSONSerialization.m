@@ -139,13 +139,14 @@ static GMSPolygon * GMSPolygonFromGeoJSONPolygonFeature(NSDictionary *feature) {
             for (GMSPolygon *interior_polygon in interiorPolygons){
                 
                 
-                [holes_path_array arrayByAddingObject:interior_polygon.path];
+                holes_path_array = [holes_path_array arrayByAddingObject:interior_polygon.path];
                 
                 
             }
             
             
             exteriorPolygon.holes = holes_path_array;
+            polygon = exteriorPolygon;
            
         }
             break;
