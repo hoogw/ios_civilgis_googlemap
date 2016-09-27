@@ -531,7 +531,29 @@ for (GMSOverlay *shape in last_overlay_shapes) {
         
        // NSLog(@"+++++++++++Polygon click %@", polygon.title);
         
-        [map_View makeToast:polygon.title];
+        [map_View makeToast:polygon.title
+                   duration:2.0
+                   position:CSToastPositionBottom
+                      title:@""
+                      image:[UIImage imageNamed:@"toast.png"]
+                      style:nil
+                 completion:^(BOOL didTap) {
+                     if (didTap) {
+                          NSLog(@"completion from tap");
+                     } else {
+                          NSLog(@"completion without tap");
+                     }
+                 }
+         
+         ];
+        
+        // toggle "tap to dismiss" functionality
+        [CSToastManager setTapToDismissEnabled:YES];
+        
+        // toggle queueing behavior
+        [CSToastManager setQueueEnabled:YES];
+        
+        
         
     }// if polygon
     
@@ -546,7 +568,29 @@ for (GMSOverlay *shape in last_overlay_shapes) {
         polyline.strokeWidth = 3;
         
         // NSLog(@"+++++++++++Polyline click %@", polyline.title);
-        [map_View makeToast:polyline.title];
+        [map_View makeToast:polyline.title
+         
+                   duration:2.0
+                   position:CSToastPositionBottom
+                      title:@""
+                      image:[UIImage imageNamed:@"toast.png"]
+                      style:nil
+                 completion:^(BOOL didTap) {
+                     if (didTap) {
+                          NSLog(@"completion from tap");
+                     } else {
+                         NSLog(@"completion without tap");
+                     }
+                 }
+         
+         ];
+        
+        // toggle "tap to dismiss" functionality
+        [CSToastManager setTapToDismissEnabled:YES];
+        
+        // toggle queueing behavior
+        [CSToastManager setQueueEnabled:YES];
+        
         
     }// if polyline
     
@@ -564,7 +608,27 @@ for (GMSOverlay *shape in last_overlay_shapes) {
     
     
     [map_View setSelectedMarker:nil];
-    [map_View makeToast:marker.title];
+    [map_View makeToast:marker.title
+               duration:2.0
+               position:CSToastPositionBottom
+                  title:@""
+                  image:[UIImage imageNamed:@"toast.png"]
+                  style:nil
+             completion:^(BOOL didTap) {
+                 if (didTap) {
+                     // NSLog(@"completion from tap");
+                 } else {
+                     // NSLog(@"completion without tap");
+                 }
+             }
+     
+     ];
+    
+    // toggle "tap to dismiss" functionality
+    [CSToastManager setTapToDismissEnabled:YES];
+    
+    // toggle queueing behavior
+    [CSToastManager setQueueEnabled:YES];
     
     
     return YES;

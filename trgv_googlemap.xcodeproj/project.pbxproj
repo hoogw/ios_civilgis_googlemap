@@ -482,7 +482,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.transparentgov.ios.googlemap;
 				PRODUCT_NAME = trgv_googlemap;
-				PROVISIONING_PROFILE = "cc2377d5-6543-416b-94cf-204b8d99a975";
+				PROVISIONING_PROFILE = "806a5853-a6e0-4546-91f7-d808d8f82a27";
 			};
 			name = Debug;
 		};
@@ -498,7 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.transparentgov.ios.googlemap;
 				PRODUCT_NAME = trgv_googlemap;
-				PROVISIONING_PROFILE = "cc2377d5-6543-416b-94cf-204b8d99a975";
+				PROVISIONING_PROFILE = "806a5853-a6e0-4546-91f7-d808d8f82a27";
 			};
 			name = Release;
 		};
