@@ -154,7 +154,7 @@
                  context:NULL];
     
     
-    mapView.mapType = kGMSTypeHybrid;
+   // mapView.mapType = kGMSTypeHybrid;
     
     mapView.delegate = self;
     

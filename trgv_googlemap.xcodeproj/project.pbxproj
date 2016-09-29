@@ -259,6 +259,8 @@
 				TargetAttributes = {
 					3054651B1C183B7F00562292 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = C4NX5S9Q4B;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -475,14 +477,17 @@
 			baseConfigurationReference = 120F3D51B2CEDF09B8842F1A /* Pods-ZLNavigationControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Guowen Hu (C4NX5S9Q4B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C4NX5S9Q4B;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZLNavigationControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.transparentgov.ios.googlemap;
 				PRODUCT_NAME = trgv_googlemap;
-				PROVISIONING_PROFILE = "806a5853-a6e0-4546-91f7-d808d8f82a27";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -491,14 +496,17 @@
 			baseConfigurationReference = 721493ADC7F666A004D2F27B /* Pods-ZLNavigationControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Guowen Hu (C4NX5S9Q4B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C4NX5S9Q4B;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZLNavigationControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.transparentgov.ios.googlemap;
 				PRODUCT_NAME = trgv_googlemap;
-				PROVISIONING_PROFILE = "806a5853-a6e0-4546-91f7-d808d8f82a27";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
